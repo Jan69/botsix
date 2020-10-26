@@ -1,10 +1,16 @@
 #file for notes and snippets and whatnot
 
+#make venv
+python3 -m venv venv
+
 #install requirements
 pip install -r requirements.txt
 
 #upgrade
 pip install --upgrade activate pip setuptools ircrobots
 
+#symlink relaybot into the venv path for easy execution
+ln -s $PWD/src/relay_bot.py venv/bin
+
 #commit without a message (BIG BAD EVIL but who cares lol)
-git commit -a --allow-empty-message -m ""
+git commit --allow-empty-message -m ""
