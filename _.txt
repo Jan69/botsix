@@ -7,3 +7,4 @@ pip install -r requirements.txt
 pip install --upgrade activate pip setuptools ircrobots
 
 #commit without a message (BIG BAD EVIL but who cares lol)
+git commit -a --allow-empty-message -m ""
