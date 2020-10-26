@@ -2,3 +2,5 @@
 
 #upgrade
 pip install --upgrade activate pip setuptools ircrobots
+
+#commit without a message (BIG BAD EVIL but who cares lol)
