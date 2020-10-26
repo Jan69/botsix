@@ -1,0 +1,4 @@
+#file for notes and snippets and whatnot
+
+#upgrade
+pip install --upgrade activate pip setuptools ircrobots
