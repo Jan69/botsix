@@ -9,6 +9,7 @@ from ircrobots import Server as BaseServer
 from ircrobots import ConnectionParams
 
 TRIGGER = "!"
+botname="botsix"
 
 class Bot(BaseBot):
     def __init__(self, channel1: str, channel2: str):
@@ -71,8 +72,8 @@ async def main(hostname: str, channel1: str, channel2: str, nickname: str):
 
 if __name__ == "__main__":
     parser = ArgumentParser(description="A simple IRC bot for jan6")
-    parser.add_argument("hostname")
-    parser.add_argument("nickname")
+    parser.add_argument("--hostname",default="tilde.chat")
+    parser.add_argument("-n","--nickname",default=botname)
     parser.add_argument("channel1")
     parser.add_argument("channel2")
     args = parser.parse_args()
